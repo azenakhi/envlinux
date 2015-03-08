@@ -1,0 +1,17 @@
+hardstatus alwayslastline "%= %3n %t%? [%h]%? %="
+caption always "%= %-w%L>%{= BW}%n*%t%{-}%52<%+w %L="
+
+vbell_msg "bell: window ~%" # Message for visual bell
+vbellwait 2 # Seconds to pause the screen for visual bell
+vbell off # Turns visual bell off
+
+caption always "%?%F%{-b bc}%:%{-b bb}%?%C|%D|%M %d|%H%?%F%{+u wb}%? %L=%-Lw%45>%{+b by}%n%f*%t%{-}%+Lw%-0<"
+
+
+# Fix fullscreen programs
+altscreen on
+#
+# #termcapinfo xterm* ti@:te@
+termcapinfo xterm* ti=:te=
+# #termcapinfo xterm|xterms|xs ti@:te=\E[2J
+
